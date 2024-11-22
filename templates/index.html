@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main-content">
+    <!-- Primer div: Slogan y botones -->
+    <div class="slogan-container">
+        <h2>Aquí irá el eslogan</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus lacinia odio vitae vestibulum vestibulum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="button-container">
+            <a href="#" class="button">Botón 1</a>
+            <a href="#" class="button">Botón 2</a>
+        </div>
+    </div>
+
+    <!-- Segundo div: Imagen grande -->
+    <div class="image-container">
+        <img src="/static/images/slogan.jpg" alt="Descripción de la imagen" class="large-image">
+    </div>
+
+    <!-- Tercer div: Formulario -->
+    <div class="form-container">
+        <form action="#" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+<section class="content">
+    <div class="card">
+        <img src="/static/images/TI.jpg" alt="Imagen 1">
+        <div class="card-content">
+            <h3>Nuestros Cursos</h3>
+            <p>
+                Descripción breve 
+            </p>
+        </div>
+        <div class="card-button-container">
+            <a href="#" class="button">Botón 1</a>
+            <a href="#" class="button">Botón 2</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/TI.jpg" alt="Imagen 1">
+        <div class="card-content">
+            <h3>Nuestros Cursos</h3>
+            <p>
+                Descripción breve 
+            </p>
+        </div>
+        <div class="card-button-container">
+            <a href="#" class="button">Botón 1</a>
+            <a href="#" class="button">Botón 2</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/TI.jpg" alt="Imagen 1">
+        <div class="card-content">
+            <h3>Nuestros Cursos</h3>
+            <p>
+                Descripción breve 
+            </p>
+        </div>
+        <div class="card-button-container">
+            <a href="#" class="button">Botón 1</a>
+            <a href="#" class="button">Botón 2</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/TI.jpg" alt="Imagen 1">
+        <div class="card-content">
+            <h3>Nuestros Cursos</h3>
+            <p>
+                Descripción breve 
+            </p>
+        </div>
+        <div class="card-button-container">
+            <a href="#" class="button">Botón 1</a>
+            <a href="#" class="button">Botón 2</a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}

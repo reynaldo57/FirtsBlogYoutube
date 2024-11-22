@@ -1,0 +1,78 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(44, 42, 42, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+    z-index: 100;
+    box-sizing: border-box;
+}
+header nav {
+    display: flex; /* Separa los elementos en columnas*/
+    justify-content: space-between; /* Mantiene elementos a los extremos */
+    align-items: center;
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+.logo-container {
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    max-width: 120px; /* Un límite máximo para pantallas grandes */
+    min-width: 60px;  /* Un límite mínimo para pantallas pequeñas */
+    margin-right: 1em;
+}
+.logo-img {
+    width: 40%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que se comporte como un bloque dentro del contenedor */
+}
+/* Lista de navegación */
+header nav ul {
+    display: flex;  /* Separa los elementos en columnas*/
+    gap: 1em; /* Separación entre los elementos de la lista */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si es necesario */
+}
+/* Estilo de los enlaces */
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1em; /* Ajuste del tamaño de la fuente para adaptarse mejor en dispositivos pequeños */
+    padding: 0.5em 1em;
+    display: block;/* Ordena lista uno debajo de otro */
+}
+header nav ul li.dropdown {
+    position: relative;
+}
+/* Contenido del dropdown */
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Se asegura que el dropdown aparezca debajo del botón */
+    left: 0;
+    box-sizing: border-box;
+}
+header nav ul li .dropdown-content a {
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* Hover para mostrar el dropdown */
+header nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Hover para los enlaces */
+header nav ul li .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

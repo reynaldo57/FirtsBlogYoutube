@@ -1,0 +1,21 @@
+
+
+<header>
+    <nav>
+        <div class="logo-container">
+            <img src="/static/images/logo.png" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'blogs' %}">Blogs</a></li>
+            <li class="dropdown">
+                <a href="#">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Langueges</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+</header>

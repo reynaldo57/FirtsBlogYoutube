@@ -1,0 +1,113 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los divs se apilen en pantallas pequeñas */
+    justify-content: center;
+    gap: 1em; /* Espacio entre los divs */
+    padding: 30px;
+    width: 100%; /* Ocupa el ancho completo de la pantalla */
+    box-sizing: border-box;
+    margin-top: calc(10vh - 5%); /* Ajusta dinámicamente según el tamaño de la pantalla */
+}
+/* Primer  DIV*/
+.slogan-container {
+    flex: 1 1 10%; /* Toma 10% del espacio disponible, pero puede crecer o reducirse */
+    min-width: 350px; /* Evita que el div sea demasiado pequeño - RESPONSIVE*/
+    padding: 20px;
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Disponer los elementos en columna */
+    justify-content: flex-start; /* Espacio entre el contenido */
+}
+.slogan-container h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: white;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.slogan-container p {
+    font-size: 1.2rem;
+    margin-bottom: 4em;
+    color: rgb(0, 0, 0);
+}
+.button-container {
+    display: flex;
+    gap: 5em; /* Espacio entre los botones */
+    justify-content: start; /* Centra los botones horizontalmente */
+}
+.button {
+    padding: 0.75em 2em;
+    font-size: 1rem;
+    background-color: #00a30e;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.button:hover {
+    background-color: #555;
+}
+/* Segundo DIV*/
+.image-container {
+    flex: 1 1 10%; /* Ocupa el 10% del ancho disponible */
+    padding: 20px;
+    min-width: 350px; /* Evita que el div sea demasiado pequeño - RESPONSIVE**/
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Disponer los elementos en columna */
+}
+.large-image {
+    width: 80%;
+    height: 80%;
+    display: block;
+    border-radius: 8px;
+    opacity: 1;
+    margin-top: -2.5%;
+    margin-left: -1%;
+}
+/* Tercer DIV*/
+.form-container {
+    flex: 1 1 10%; /* Ocupa el 10% del ancho disponible */
+    min-width: 350px; /* Evita que el div sea demasiado pequeño - RESPONSIVE**/
+    padding: 60px;
+    border-radius: 8px;
+    margin-top: -10px;
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Disponer los elementos en columna */
+    justify-content: space-between; /* Espacio entre el contenido */
+    background: url('/static/images/fondo_verde.jpg') center/cover no-repeat;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em; /* Espacio entre los campos del formulario */
+    flex-grow: 1; /* Permite que el formulario ocupe el espacio restante */
+    padding: 10px;
+}
+.form-container label {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.form-container input,
+.form-container textarea {
+    padding: 0.75em;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent; /* Hacer el fondo transparente */
+    color: #000000; /* Cambiar color del texto para que sea visible */
+    font-weight: bold;
+}
+.submit-button {
+    padding: 0.75em 2em;
+    font-size: 1rem;
+    background-color: #a30000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid white;
+}
+.submit-button:hover {
+    background-color: #555;
+}
